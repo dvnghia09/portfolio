@@ -85,22 +85,22 @@ const Banner = () => {
                     <div className="relative mt-16 h-[300px] md:h-full" >
                         <Slider {...settings}>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/html.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/html.png" alt="logo" width='300' height='200'/>
                             </div>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/css.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/css.png" alt="logo" width='300' height='200'/>
                             </div>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/javascript.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/javascript.png" alt="logo" width='300' height='200'/>
                             </div>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/react.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/react.png" alt="logo" width='300' height='200'/>
                             </div>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/node.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/node.png" alt="logo" width='300' height='200'/>
                             </div>
                             <div className='!flex justify-center'>
-                                <Image className='w-[300px]' src="/../public/assets/skills/nextjs.png" alt="logo" width='300' height='200'/>
+                                <Image className='w-[300px]' src="/assets/skills/nextjs.png" alt="logo" width='300' height='200'/>
                             </div>
                         </Slider>
                     </div>

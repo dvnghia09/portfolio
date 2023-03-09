@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
   return (
     <div className='fixed w-full h-[60px] md:h-20 shadow-xl z-[100] dark:bg-black bg-white'>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 z-[90]'>
-        <Image className='p-[10px] rounded-[8px] bg-white' src="/../public/assets/logo.png" alt="logo" width='200' height='25'/>
+        <Image className='p-[10px] rounded-[8px] bg-white' src="/assets/logo.png" alt="logo" width='200' height='25'/>
         <div className=''>
           <ul className='hidden md:flex'>
             <Link href='/' >
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Image className='p-[10px] rounded-[8px] bg-white' src="/../public/assets/logo.png" alt="logo" width='200' height='200'/>
+              <Image className='p-[10px] rounded-[8px] bg-white' src="/assets/logo.png" alt="logo" width='200' height='200'/>
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer'>
                 <AiOutlineClose size={20} />
               </div>

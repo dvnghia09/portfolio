@@ -6,7 +6,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../../public/assets/contact.jpg';
 import email from 'emailjs-com'
 
 const Contact = () => {
@@ -17,7 +16,6 @@ const Contact = () => {
       .sendForm('service_7tvf495', 'template_ob2x4ma', e.target, '1AiBo-8uedyDVndmH')
       .then(
         (result) => {
-          console.log(result.text);
           alert("Send mail SUCCESS!");
         },
         (error: any) => {
@@ -41,8 +39,10 @@ const Contact = () => {
               <div>
                 <Image
                   className='rounded-xl hover:scale-105 ease-in duration-300'
-                  src={ContactImg}
+                  src={'/assets/contact.jpg'}
                   alt='/'
+                  width={400}
+                  height={300}
                 />
               </div>
               <div>
