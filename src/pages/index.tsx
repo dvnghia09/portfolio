@@ -7,6 +7,7 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Analytics/>
         <Navbar />
         <Banner />
         <About />
