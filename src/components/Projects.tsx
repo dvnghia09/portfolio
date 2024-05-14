@@ -6,34 +6,34 @@ const Projects = () => {
     <div id='projects' className='w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
-          Projects
+          Personal project
         </p>
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='Web E-Commerce'
             backgroundImg={"https://dvnghia09.github.io/info/front/img/prj1.JPG"}
-            projectUrl='/property'
-            tech='React JS'
+            projectUrl='/'
+            tech='Laravel'
           />
           <ProjectItem
             title='Clone shopee'
             backgroundImg={"https://dvnghia09.github.io/info/front/img/prj2.JPG"}
-            projectUrl='/crypto'
-            tech='React JS'
+            projectUrl='/'
+            tech='Vue JS'
 
           />
           <ProjectItem
             title='Music player'
             backgroundImg={"https://dvnghia09.github.io/info/front/img/prj3.JPG"}
-            projectUrl='/netflix'
+            projectUrl='/'
             tech='React JS'
 
           />
           <ProjectItem
-            title='Twitch UI'
-            backgroundImg={"https://dvnghia09.github.io/info/front/img/prj4.JPG"}
-            projectUrl='/twitch'
+            title='Blog'
+            backgroundImg={"/assets/blog1.png"}
+            projectUrl='/blog'
             tech='Next JS'
 
           />

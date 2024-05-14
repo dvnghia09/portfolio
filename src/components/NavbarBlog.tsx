@@ -6,7 +6,7 @@ import { AiOutlineClose, AiOutlineMenu, AiFillFacebook, AiOutlineGithub, AiOutli
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = ({page} : any) => {
   const { theme, setTheme } = useTheme()
   const [nav, setNav] = useState<boolean>(false)
   const [btn, setBtn] = useState<boolean>(false)
@@ -24,34 +24,16 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <div className={`fixed w-full h-[60px] md:h-20 shadow-xl z-[100] dark:bg-black bg-white`}>
+    <div className={`fixed w-full h-[60px] md:h-20 shadow-xl z-[100] dark:bg-[#2a2a2a] bg-white`}>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 z-[90]'>
-        <Link href='/' >
+        <Link href='/blog' >
           <Image className='p-[10px] rounded-[8px] bg-white' src="/assets/logo.png" alt="logo" width='200' height='25'/>
         </Link>
         <div className=''>
           <ul className='hidden md:flex'>
-            <Link href='/' >
+            <Link href='/blog' >
               <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Home</li>
             </Link>
-            <a href='/#about' >
-              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>About</li>
-            </a>
-            <a href='/#skills' >
-              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Skills</li>
-            </a>
-            <a href='/#projects' >
-              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Projects</li>
-            </a>
-            <a href='/#contact' >
-              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Contact</li>
-            </a>
-            <Link href='/blog' target='_blank' >
-              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Blog</li>
-            </Link>
-            <div className='ml-10 hover:no-underline cursor-pointer' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-              { btn ? <BsFillMoonStarsFill size={20}/> : <BsFillSunFill size={20}/> }
-            </div>
           </ul>
           <div onClick={handleNav} className='md:hidden'>
             <AiOutlineMenu size={20} />
@@ -79,27 +61,9 @@ const Navbar: React.FC = () => {
             </div>
             <div className='mt-10'>
               <ul className=''>
-                <Link href='/' >
+                <Link href='/blog' >
                   <li className='ml-10 text-md font-[700] uppercase py-4'>Home</li>
                 </Link>
-                <a href='/#about' >
-                  <li className='ml-10 text-md font-[700] uppercase py-4'>About</li>
-                </a>
-                <a href='/#skills' >
-                  <li className='ml-10 text-md font-[700] uppercase py-4'>Skills</li>
-                </a>
-                <a href='/#projects' >
-                  <li className='ml-10 text-md font-[700] uppercase py-4'>Projects</li>
-                </a>
-                <a href='/#contact' >
-                  <li className='ml-10 text-md font-[700] uppercase py-4'>Contact</li>
-                </a>
-                <Link href='/blog' target='_blank' >
-                  <li className='ml-10 text-md font-[700] uppercase py-4'>Blog</li>
-                </Link>
-                <span className='ml-10 hover:no-underline cursor-pointer py-4 block' onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-                  {btn ? <BsFillMoonStarsFill size={20}/> : <BsFillSunFill size={20}/> }
-                </span>
               </ul>
             </div>
           </div>
