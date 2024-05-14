@@ -9,7 +9,7 @@ import Link from 'next/link'
 import NavbarBlog from '@/components/NavbarBlog'
 import Head from 'next/head'
 
-const Home: NextPage = ({blogs, tags}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const Blog: NextPage = ({blogs, tags}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const [filterWord, setFilterWord] = useState<string[]>([])
   const [selected, setSelected] = useState<number[]>([])
   const filterLabel = (tag:any, idx:number) => {
@@ -87,7 +87,7 @@ const Home: NextPage = ({blogs, tags}: InferGetServerSidePropsType<typeof getSer
   )
 }
 
-export default Home;
+export default Blog;
 
 export const getServerSideProps: GetServerSideProps = async() => {
   let blogs: BlogPost[] = await getBlogs()
