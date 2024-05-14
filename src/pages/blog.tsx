@@ -65,7 +65,7 @@ const Blog: NextPage = ({blogs, tags}: InferGetServerSidePropsType<typeof getSer
             return (
               <div key={blog.id} className='text-neutral-900 w-[38em] max-h-[20em] overflow-hidden mx-6 mb-6 bg-neutral-300 text-zinec-800 rounded-lg p-4 hover:bg-neutral-500 hover:text-neutral-300 transition-all duration-300'>
                 <Link href={{
-                  pathname: "blog/blog-detail",
+                  pathname: "/blog-detail",
                   query: { id: blog.id },
                 }}>
                   <BlogPreview
