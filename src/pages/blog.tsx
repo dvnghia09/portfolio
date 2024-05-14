@@ -1,8 +1,8 @@
 import { NextPage } from "next"
 import { useMemo, useState } from "react";
 import { GetServerSideProps } from 'next'
-import {getBlogs} from '../../../server/blogs'
-import { BlogPost } from '../../../types/blog';
+import {getBlogs} from '../../server/blogs'
+import { BlogPost } from '../../types/blog';
 import { InferGetServerSidePropsType } from 'next';
 import BlogPreview from '@/components/BlogPreview';
 import Link from 'next/link'

@@ -1,7 +1,7 @@
 import { NextPage } from "next"
 import { GetServerSideProps } from 'next'
-import {getBlogDetail} from '../../../server/blogs'
-import { BlogDetail as BlogDetailType } from '../../../types/blog';
+import {getBlogDetail} from '../../server/blogs'
+import { BlogDetail as BlogDetailType } from '../../types/blog';
 import { InferGetServerSidePropsType } from 'next';
 import BlogHeader from "@/components/BlogHeader";
 import parse from 'html-react-parser';
