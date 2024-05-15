@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,13 +13,13 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 light:text-gray-600'>
-            I started pursuing web programming from 2021 with the starting point of php laravel. 
-            After a while working at Caerux Lab, I have learned a lot of experience and knowledge such as sass, 
-            jquery ... After a while learned more react js to participate in company project
+            Hello! I'm a web developer with expertise in a variety of technologies. I'm proficient in backend frameworks like Laravel and Node.js, where I handle server-side logic and database interactions efficiently. On the frontend, I specialize in Vue.js, React.js, and Next.js, crafting interactive and responsive user interfaces.
           </p>
           <p className='py-2 light:text-gray-600'>
-            I started pursuing web programming from 2021 with the starting point of php laravel. After a while working at Caerux Lab,
-            I have learned a lot of experience and knowledge such as sass, jquery ... After a while learned more react js to participate in company project
+          My experience extends to cloud services as well, particularly AWS, where I've worked with EC2 instances, S3 for storage, and load balancers for distributing traffic efficiently. Additionally, I'm well-versed in setting up auto-scaling configurations to dynamically adjust resources based on demand, ensuring optimal performance and cost efficiency.
+          </p>
+          <p className='py-2 light:text-gray-600'>
+          With a solid foundation in both frontend and backend development, coupled with cloud expertise, I thrive in architecting and building robust web applications from concept to deployment. Let's build something amazing together!
           </p>
           <Link href='/#projects'>
             <p className='py-2 light:text-gray-600 underline cursor-pointer'>
