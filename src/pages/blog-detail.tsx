@@ -5,7 +5,7 @@ import { BlogDetail as BlogDetailType } from '../../types/blog';
 import { InferGetServerSidePropsType } from 'next';
 import BlogHeader from "@/components/BlogHeader";
 import parse from 'html-react-parser';
-import '../../styles/blog.module.css'
+import _blog from '../styles/blog.module.css'
 import NavbarBlog from '@/components/NavbarBlog'
 
 const BlogDetail: NextPage = ({blog}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -19,7 +19,7 @@ const BlogDetail: NextPage = ({blog}: InferGetServerSidePropsType<typeof getServ
           <div className="flex justify-center mb-4">
             <BlogHeader createdAt={createdAt} author={author} />
           </div>
-          <div className={`${blog.html} flex flex-col`}>
+          <div className={`${_blog.html} flex flex-col`}>
             {parse(bodyHTML)}
           </div>
         </div>
