@@ -5,7 +5,7 @@ import { BlogDetail as BlogDetailType } from '../../types/blog';
 import { InferGetServerSidePropsType } from 'next';
 import BlogHeader from "@/components/BlogHeader";
 import parse from 'html-react-parser';
-import blog from '../../styles/blog.module.css'
+import '../../styles/blog.module.css'
 import NavbarBlog from '@/components/NavbarBlog'
 
 const BlogDetail: NextPage = ({blog}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
