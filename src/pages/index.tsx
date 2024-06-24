@@ -18,7 +18,7 @@ export default function Home() {
         <meta name="description" content="Website introducing Nghiadv" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="https://nghiadv.vercel.app/logo.png" />
         <meta property="og:title" content="Nghia DV website" />
         <meta property="og:description" content="Nghia DV website" />
         <meta name="keywords" content="nghiadv"></meta>
