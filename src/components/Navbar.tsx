@@ -46,6 +46,9 @@ const Navbar: React.FC = () => {
             <a href='/#contact' >
               <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Contact</li>
             </a>
+            <Link href='/game' >
+              <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Game</li>
+            </Link>
             <Link href='/blog' target='_blank' >
               <li className='ml-10 text-sm uppercase hover:border-b font-bold'>Blog</li>
             </Link>
@@ -94,6 +97,9 @@ const Navbar: React.FC = () => {
                 <a href='/#contact' >
                   <li className='ml-10 text-md font-[700] uppercase py-4'>Contact</li>
                 </a>
+                <Link href='/game'>
+                  <li className='ml-10 text-md font-[700] uppercase py-4'>Game</li>
+                </Link>
                 <Link href='/blog' target='_blank' >
                   <li className='ml-10 text-md font-[700] uppercase py-4'>Blog</li>
                 </Link>
