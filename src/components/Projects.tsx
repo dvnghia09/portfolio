@@ -12,22 +12,21 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='Web E-Commerce'
-            backgroundImg={"https://dvnghia09.github.io/info/front/img/prj1.JPG"}
+            backgroundImg={"/assets/prj1.jpg"}
             projectUrl='/'
             tech='Laravel'
           />
           <ProjectItem
-            title='Clone shopee'
-            backgroundImg={"https://dvnghia09.github.io/info/front/img/prj2.JPG"}
-            projectUrl='/'
-            tech='Vue JS'
-
-          />
-          <ProjectItem
             title='Music player'
-            backgroundImg={"https://dvnghia09.github.io/info/front/img/prj3.JPG"}
+            backgroundImg={"/assets/prj3.jpg"}
             projectUrl='/'
             tech='React JS'
+          />
+          <ProjectItem
+            title='Web app'
+            backgroundImg={"/assets/prj_02.png"}
+            projectUrl='https://quychan.com/'
+            tech='Next JS'
 
           />
           <ProjectItem
